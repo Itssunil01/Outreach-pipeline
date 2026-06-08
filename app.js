@@ -51,7 +51,7 @@ async function main() {
     let companies = await findSimilarCompanies(domain);
 
     // TEMPORARY LIMIT
-    companies = companies.slice(0, 2);
+    companies = companies.slice(0, 5);
 
     console.log("====================================");
 
@@ -67,7 +67,7 @@ async function main() {
     // PROSPEO
     // ====================================
 
-    console.log("\n👥 Finding decision makers...\n");
+    console.log("\n Finding decision makers...\n");
 
     const contacts = await findDecisionMakers(companies);
 
@@ -97,14 +97,14 @@ async function main() {
 
     console.log("\n Resolving work emails...\n");
 
-    const leads = contacts.filter((contact) => contact.email);
+    // const leads = contacts.filter((contact) => contact.email);
 
-    // const leads = [
-    //   {
-    //     name: "Sunil Bal",
-    //     email: "sunilkumarbalp@gmail.com"
-    //   }
-    // ];
+    const leads = [
+      {
+        name: "Sunil Bal",
+        email: "sunilkumarbalp@gmail.com"
+      }
+    ];
 
     console.log("====================================");
 
