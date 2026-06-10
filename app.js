@@ -97,14 +97,14 @@ async function main() {
 
     console.log("\n Resolving work emails...\n");
 
-    // const leads = contacts.filter((contact) => contact.email);
+    const leads = contacts.filter((contact) => contact.email);
 
-    const leads = [
-      {
-        name: "Sunil Bal",
-        email: "sunilkumarbalp@gmail.com"
-      }
-    ];
+    // const leads = [
+    //   {
+    //     name: "Sunil Bal",
+    //     email: "sunilkumarbalp@gmail.com",
+    //   },
+    // ];
 
     console.log("====================================");
 
